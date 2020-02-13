@@ -39,14 +39,13 @@ $folder = clean_param($args[2], PARAM_TEXT);
 $page = clean_param($args[3], PARAM_TEXT);
 $theme = optional_param('theme', '', PARAM_TEXT);
 
-
 $docsdir = '/admin/tool/componentlibrary/docs/';
 $cssfile = '/admin/tool/componentlibrary/hugo/dist/css/docs.css';
 
 if ($docs == 'bootstrap-4.3') {
-	$docspage = $CFG->dirroot . $docsdir . 'bootstrap-4.3/' . $version . '/' . $folder . '/' . $page . '/index.html';
+    $docspage = $CFG->dirroot . $docsdir . 'bootstrap-4.3/' . $version . '/' . $folder . '/' . $page . '/index.html';
 } else if ($docs == 'moodle-3.9') {
-	$docspage = $CFG->dirroot . $docsdir . 'moodle-3.9/' . $version . '/' . $folder . '/' . $page . '/index.html';
+    $docspage = $CFG->dirroot . $docsdir . 'moodle-3.9/' . $version . '/' . $folder . '/' . $page . '/index.html';
 }
 
 $PAGE->set_pagelayout('embedded');
@@ -94,5 +93,3 @@ if (file_exists($docspage)) {
     $firstpage = new moodle_url('/admin/tool/componentlibrary/docspage.php/moodle-3.9/getting-started/introduction/');
     redirect($firstpage);
 }
-
-
