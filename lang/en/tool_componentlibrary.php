@@ -36,4 +36,5 @@ $string['installer'] = '<h3>Please setup this component library</h3>
 	<p>For more info see the README.md file in this plugin</p>';
 
 $string['themeselector'] = 'Theme selector';
+$string['togglenavigation'] = 'Toggle navigation';
 $string['urlswitchurlwarning'] = 'To have the theme selector on the navbar, the core theme \'allowthemechangeonurl\' setting needs to be set.';
